@@ -10,8 +10,8 @@ for (let i = 0; numeros.length < 5; i++) {
 
 console.log(numeros);
 console.log();
-
-const numerosOrdenados = numeros.sort((a, b) => a - b);
+const numerosOrdenados = [...numeros]
+numerosOrdenados.sort((a, b) => a - b);
 
 console.log();
 console.log(numerosOrdenados);
