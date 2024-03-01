@@ -1,12 +1,12 @@
-const dados = fetch("https://data.json")
-    .then(response => response.json())
-            
+fetch("data.json")
+    .then(response => {
+        return response.json()})
     .then(data => {
-        //console.log(dados);
-        return data;
+        console.log(JSON.stringify(data));
+        document.write(JSON.stringify(data));
+        
     })
     .catch(error => {
         console.log(error);
     });
-//console.log(teste);
-document.write(dados);
+
